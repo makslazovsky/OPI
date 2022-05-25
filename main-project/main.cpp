@@ -65,7 +65,7 @@ int main()
 		cout << "\nВыберите способ фильтрации или обработки данных:\n";
 		cout << "1) Клуб спартак\n";
 		cout << "2) Те кто справился быстрее чем 2:50\n";
-		cout << "3) ПУЗЫРЬ\n";
+		cout << "3) Сортировки\n";
 		cout << "\nВведите номер выбранного пункта: ";
 		int item;
 		cin >> item;
@@ -82,13 +82,58 @@ int main()
 			break;
 		case 3:
 		{
-			cout << "***** ПУЗЫРЬ:\n\n";
-			data_subscription** sorted = bubblesort(subscriptions);
-			for (int i = 0; i < size; i++)
+			int item2;
+			bool method;
+			data_subscription** sorted;
+			cout << "\nВыберите способ сортировки:\n";
+			cout << "1) Пузырь по кол-ву времени\n";
+			cout << "2) Пузырь по алфавиту\n";
+			cout << "3) Быстрая сортировка по кол-ву времени\n";
+			cout << "4) Быстрая сортировка по алфавиту\n";
+			cin >> item2;
+			switch (item2)
 			{
-				output(sorted[i]);
+
+			case 1:
+				cout << "***** ПУЗЫРЬ кол-во времени:\n\n";
+				method = true;
+				sorted = bubblesort(subscriptions, method);
+				for (int i = 0; i < size; i++)
+				{
+					output(sorted[i]);
+				}
+				break;
+			case 2:
+				cout << "***** ПУЗЫРЬ алфавит:\n\n";
+				method = false;
+				sorted = bubblesort(subscriptions, method);
+				for (int i = 0; i < size; i++)
+				{
+					output(sorted[i]);
+				}
+				break;
+			case 3:
+				cout << "***** Быстрая кол-во времени:\n\n";
+				method = true;
+				sorted = quicksort(subscriptions, size, method);
+				for (int i = 0; i < size; i++)
+				{
+					output(sorted[i]);
+				}
+				break;
+			case 4:
+				cout << "***** Быстрая алфавит:\n\n";
+				method = false;
+				sorted = quicksort(subscriptions, size, method);
+				for (int i = 0; i < size; i++)
+				{
+					output(sorted[i]);
+				}
+				break;
+			default:
+			throw "Некорректный номер пункта";
 			}
-			break;
+			
 		}
 		default:
 			throw "Некорректный номер пункта";

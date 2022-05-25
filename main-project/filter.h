@@ -11,6 +11,8 @@ bool check_spartak(data_subscription* element);
 
 bool check_speed(data_subscription* element);
 
-data_subscription** bubblesort(data_subscription* array[]);
+data_subscription** bubblesort(data_subscription* array[], bool method);
+
+data_subscription** quicksort(data_subscription* array[], int size, bool method);
 
 #endif
