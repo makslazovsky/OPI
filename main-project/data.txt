@@ -1,5 +1,5 @@
-1 Ivanov Ivan Ivanovich 5:10:15 5:20:25 Spartak
-2 Petrov Ivan Ivanovich 5:12:15 5:20:25 Real
-3 Sidorov Ivan Ivanovich 5:18:15 5:20:25 Dinamo
-4 Gaf Ivan Ivanovich 5:10:15 11:20:25 Da
-5 Dops Ivan Ivanovich 5:10:15 23:20:25 Spartak
+Ivanov Ivan Ivanovich 5:10:15 5:20:25 Spartak
+Petrov Ivan Ivanovich 5:12:15 5:20:25 Real
+Sidorov Ivan Ivanovich 0:01:15 0:02:25 Dinamo
+Gaf Ivan Ivanovich 5:10:15 11:20:25 Da
+Dops Ivan Ivanovich 5:10:15 23:20:25 Spartak
