@@ -3,7 +3,6 @@
 
 #include "data_subscription.h"
 
-int process(data_subscription* array[], int size);
+char process(data_subscription* array[], int size);
 
 #endif
-
